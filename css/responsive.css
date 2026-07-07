@@ -22,6 +22,7 @@
 
 }
 
+
 /*==================================
 991px
 ==================================*/
@@ -29,7 +30,118 @@
 @media screen and (max-width:991px){
 
     /*====================
-    Footer
+    HEADER
+    ====================*/
+
+    header{
+        height:80px;
+    }
+
+    .nav{
+        height:80px;
+        justify-content:space-between;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .btn-header{
+        display:none;
+    }
+
+    .logo img{
+        width:160px;
+    }
+
+    /*====================
+    HERO
+    ====================*/
+
+    .hero{
+        padding-top:120px;
+        padding-bottom:80px;
+    }
+
+    .hero-container{
+        justify-content:center;
+        text-align:center;
+    }
+
+    .hero-text{
+        max-width:100%;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    /*====================
+    SERVICIOS
+    ====================*/
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    /*====================
+    FEATURES
+    ====================*/
+
+    .feature-grid{
+        grid-template-columns:1fr;
+    }
+
+    /*====================
+    NOSOTROS
+    ====================*/
+
+    .about{
+        min-height:auto;
+        padding:80px 0;
+    }
+
+    .about::before{
+        background-position:center;
+        background-size:cover;
+    }
+
+    .about-container{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        gap:35px;
+        min-height:auto;
+    }
+
+    .about-text{
+        width:100%;
+        max-width:100%;
+        text-align:center;
+    }
+
+    .floating-panel{
+        position:static;
+        transform:none;
+        width:100%;
+        max-width:450px;
+        margin:0 auto;
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .floating-item{
+        width:100%;
+    }
+
+    /*====================
+    FOOTER
     ====================*/
 
     .footer-container{
@@ -42,91 +154,14 @@
         margin-bottom:20px;
     }
 
-    /*====================
-    Nosotros
-    ====================*/
-
-    .about{
-        min-height:auto;
-        padding:80px 0;
-    }
-
-    .about::before{
-        background-position:center;
-    }
-
-    .about-container{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:center;
-        gap:30px;
-    }
-
-    .about-text{
-        width:100%;
-        max-width:100%;
-        text-align:center;
-    }
-
-    .floating-panel{
-        position:static;
-        top:auto;
-        right:auto;
-        left:auto;
-        bottom:auto;
-        transform:none;
-
-        width:100%;
-        max-width:450px;
-
-        margin:30px auto 0;
-
-        display:flex;
-        flex-direction:column;
-        gap:20px;
-    }
-
-    .floating-item{
-        width:100%;
-    }
-nav{
-    display:none;
 }
 
-.menu-toggle{
-    display:block;
-}
 
-.btn-header{
-    display:none;
-}
-
-.logo img{
-    width:160px;
-}
-
-.nav{
-    justify-content:space-between;
-}
-}
 /*==================================
 768px
 ==================================*/
 
 @media screen and (max-width:768px){
-
-    header{
-        height:80px;
-    }
-
-    .nav{
-        height:80px;
-    }
-
-    nav{
-        display:none;
-    }
 
     .logo img{
         width:150px;
@@ -147,20 +182,14 @@ nav{
 
     .hero-buttons{
         flex-direction:column;
+        align-items:center;
     }
 
     .btn-call,
     .btn-whatsapp{
         width:100%;
+        max-width:350px;
         text-align:center;
-    }
-
-    .cards{
-        grid-template-columns:1fr;
-    }
-
-    .feature-grid{
-        grid-template-columns:1fr;
     }
 
     .about h2{
@@ -172,11 +201,8 @@ nav{
         font-size:30px;
     }
 
-    footer{
-        text-align:center;
-    }
-
 }
+
 
 /*==================================
 480px
@@ -194,10 +220,6 @@ nav{
 
     .tag{
         font-size:14px;
-    }
-
-    .btn-header{
-        display:none;
     }
 
     .card img{
