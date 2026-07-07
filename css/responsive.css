@@ -28,7 +28,9 @@
 
 @media screen and (max-width:991px){
 
-    /* Footer */
+    /*====================
+    Footer
+    ====================*/
 
     .footer-container{
         grid-template-columns:1fr;
@@ -40,7 +42,9 @@
         margin-bottom:20px;
     }
 
-    /* Nosotros */
+    /*====================
+    Nosotros
+    ====================*/
 
     .about{
         min-height:auto;
@@ -52,28 +56,42 @@
     }
 
     .about-container{
+        display:flex;
         flex-direction:column;
-        align-items:flex-start;
-        min-height:auto;
+        align-items:center;
+        justify-content:center;
+        gap:30px;
     }
 
     .about-text{
+        width:100%;
         max-width:100%;
+        text-align:center;
     }
 
     .floating-panel{
-        position:relative;
+        position:static;
         top:auto;
         right:auto;
+        left:auto;
+        bottom:auto;
         transform:none;
 
         width:100%;
-        max-width:320px;
-        margin:40px auto 0;
+        max-width:450px;
+
+        margin:30px auto 0;
+
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .floating-item{
+        width:100%;
     }
 
 }
-
 /*==================================
 768px
 ==================================*/
