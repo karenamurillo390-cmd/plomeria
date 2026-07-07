@@ -328,12 +328,25 @@ SERVICIOS
     background:var(--light);
 
 }
+
+/* Solo esta sección tendrá un contenedor más ancho */
+.services .container{
+
+    width:95%;
+    max-width:1500px;
+    margin:auto;
+
+}
+
 .services h5{
+
     margin-top:40px;
     margin-bottom:10px;
     color:var(--primary);
     text-align:center;
+
 }
+
 .services h2{
 
     text-align:center;
@@ -346,7 +359,7 @@ SERVICIOS
 
     display:grid;
     grid-template-columns:repeat(4,1fr);
-    gap:30px;
+    gap:25px;
 
 }
 
@@ -357,6 +370,9 @@ SERVICIOS
     overflow:hidden;
     box-shadow:var(--shadow);
     transition:.35s;
+    display:flex;
+    flex-direction:column;
+    height:100%;
 
 }
 
@@ -370,7 +386,7 @@ SERVICIOS
 .card video{
 
     width:100%;
-    height:220px;
+    height:210px;
     object-fit:cover;
     display:block;
 
@@ -378,8 +394,9 @@ SERVICIOS
 
 .card h3{
 
-    padding:25px 25px 10px;
-    min-height:80px;
+    padding:22px 22px 10px;
+    font-size:24px;
+    min-height:85px;
     display:flex;
     align-items:center;
 
@@ -387,16 +404,17 @@ SERVICIOS
 
 .card p{
 
-    padding:0 25px;
+    padding:0 22px;
     color:var(--gray);
     line-height:1.7;
+    flex:1;
 
 }
 
 .card a{
 
     display:inline-block;
-    margin:25px;
+    margin:22px;
     color:var(--primary);
     font-weight:600;
 
