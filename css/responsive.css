@@ -90,25 +90,7 @@
     .floating-item{
         width:100%;
     }
-nav{
-    display:none;
-}
 
-.menu-toggle{
-    display:block;
-}
-
-.btn-header{
-    display:none;
-}
-
-.logo img{
-    width:160px;
-}
-
-.nav{
-    justify-content:space-between;
-}
 }
 /*==================================
 768px
